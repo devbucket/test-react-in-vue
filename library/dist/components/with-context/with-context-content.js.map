@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../src/components/with-context/with-context-content.tsx"],
+  "sourcesContent": ["import * as React from 'react'\n\nimport { useName } from './with-context'\n\nexport function WithContextContent() {\n  const [name, setName] = useName()\n\n  return (\n    <div>\n      <p className=\"items-center p-2\">\n        The name is <strong>{name}</strong>\n      </p>\n      <input\n        type=\"text\"\n        value={name}\n        onChange={(e) => setName(e.target.value)}\n        className=\"border px-3 py-2 rounded focus:outline-2 focus:outline-purple-300\"\n      />\n    </div>\n  )\n}\n"],
+  "mappings": "AAAA,UAAYA,MAAW,QAEvB,OAAS,WAAAC,MAAe,iBAEjB,SAASC,GAAqB,CACnC,KAAM,CAACC,EAAMC,CAAO,EAAIH,EAAQ,EAEhC,OACED,EAAA,cAAC,WACCA,EAAA,cAAC,KAAE,UAAU,oBAAmB,eAClBA,EAAA,cAAC,cAAQG,CAAK,CAC5B,EACAH,EAAA,cAAC,SACC,KAAK,OACL,MAAOG,EACP,SAAWE,GAAMD,EAAQC,EAAE,OAAO,KAAK,EACvC,UAAU,oEACZ,CACF,CAEJ",
+  "names": ["React", "useName", "WithContextContent", "name", "setName", "e"]
+}
