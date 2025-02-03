@@ -1,2 +1,2 @@
-import{createRoot as e}from"react-dom/client";import{applyPureReactInVue as t,setVeauryOptions as o}from"veaury";import{SimpleTest as n}from"./simple-test";import{WithContext as r}from"./with-context";import{WithContextContent as i}from"./with-context/with-context-content";o({react:{createRoot:e}});const C=t(r),c=t(i),h=t(n);export{h as SimpleTest,C as WithContext,c as WithContextContent};
+import{createRoot as e}from"react-dom/client";import{applyPureReactInVue as t,setVeauryOptions as o}from"veaury";import{SimpleTest as n}from"./simple-test";import{WithContext as r,WithContextContent as i}from"./with-context";o({react:{createRoot:e}});const x=t(r),C=t(i),c=t(n);export{c as SimpleTest,x as WithContext,C as WithContextContent};
 //# sourceMappingURL=vue.js.map

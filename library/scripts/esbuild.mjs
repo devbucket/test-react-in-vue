@@ -1,4 +1,5 @@
 import esbuild from 'esbuild'
+import { aliasPath } from 'esbuild-plugin-alias-path'
 import fs from 'node:fs'
 import path from 'node:path'
 
@@ -14,6 +15,11 @@ const options = {
   target: 'es2020',
   sourcemap: true,
   minify: true,
+  plugins: [
+    aliasPath({
+      '@': './src',
+    }),
+  ],
 }
 
 // Check if "watch=true" flag is passed

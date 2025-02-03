@@ -14,7 +14,7 @@ export function WithContextContent() {
         type="text"
         value={name}
         onChange={(e) => setName(e.target.value)}
-        className="border px-3 py-2 rounded focus:outline-2 focus:outline-purple-300"
+        className="border bg-white px-3 py-2 rounded focus:outline-2 focus:outline-purple-300"
       />
     </div>
   )
