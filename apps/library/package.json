@@ -1,7 +1,6 @@
 {
   "name": "@csq/library",
   "version": "1.0.0",
-  "main": "index.js",
   "type": "module",
   "sideEffects": [
     "*.css"
@@ -10,8 +9,14 @@
     "dist"
   ],
   "exports": {
-    "./components": "./dist/components/**/*.js",
-    "./utils": "./dist/utils/*.js",
+    "./react": {
+      "import": "./dist/react.js",
+      "types": "./dist/react.d.ts"
+    },
+    "./vue": {
+      "import": "./dist/vue.js",
+      "types": "./dist/vue.d.ts"
+    },
     "./tailwind.preset": "./tailwind.preset.ts"
   },
   "scripts": {
@@ -25,27 +30,30 @@
     "dev:css": "tailwindcss -i src/styles/index.css -o dist/styles/core.css --watch"
   },
   "devDependencies": {
-    "@tailwindcss/cli": "^4.0.1",
-    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "@types/node": "^22.13.1",
     "@types/react": "19.0.0",
     "@types/react-dom": "19.0.0",
     "esbuild": "^0.24.2",
     "esbuild-plugin-alias-path": "^2.0.2",
-    "prettier": "^3.4.2",
-    "prettier-plugin-tailwindcss": "^0.6.11",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "tailwindcss": "^3.4.17",
     "tailwindcss-animate": "^1.0.7",
-    "typescript": "^5.0.0"
+    "tsup": "^8.3.6",
+    "typescript": "^5.0.0",
+    "vue": "^3.5.13"
+  },
+  "peerDependencies": {
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "vue": "^3.5.13"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.474.0",
     "tailwind-merge": "^3.0.1",
-    "veaury": "^2.6.2",
-    "vue": "^3.5.13"
+    "veaury": "^2.6.2"
   },
   "packageManager": "pnpm@9.14.2+sha512.6e2baf77d06b9362294152c851c4f278ede37ab1eba3a55fda317a4a17b209f4dbb973fb250a77abc463a341fcb1f17f17cfa24091c4eb319cda0d9b84278387"
 }

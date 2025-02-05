@@ -1,10 +1,7 @@
 <script setup lang="ts">
-import HelloWorld from "./components/HelloWorld.vue";
-import {
-  SimpleTest,
-  WithContext,
-  WithContextContent,
-} from "../../library/dist/components/vue";
+import { SimpleTest, WithContext, WithContextContent } from '@csq/library/vue'
+
+import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
