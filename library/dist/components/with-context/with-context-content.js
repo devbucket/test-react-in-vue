@@ -1,2 +1,18 @@
-import*as e from"react";import{useName as r}from"./with-context";function i(){const[t,n]=r();return e.createElement("div",null,e.createElement("p",{className:"items-center p-2"},"The name is ",e.createElement("strong",null,t)),e.createElement("input",{type:"text",value:t,onChange:o=>n(o.target.value),className:"border bg-white px-3 py-2 rounded focus:outline-2 focus:outline-purple-300"}))}export{i as WithContextContent};
+import * as React from "react";
+import { useName } from "./with-context";
+function WithContextContent() {
+  const [name, setName] = useName();
+  return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("p", { className: "items-center p-2" }, "The name is ", /* @__PURE__ */ React.createElement("strong", null, name)), /* @__PURE__ */ React.createElement(
+    "input",
+    {
+      type: "text",
+      value: name,
+      onChange: (e) => setName(e.target.value),
+      className: "border bg-white px-3 py-2 rounded focus:outline-2 focus:outline-purple-300"
+    }
+  ));
+}
+export {
+  WithContextContent
+};
 //# sourceMappingURL=with-context-content.js.map

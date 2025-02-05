@@ -1,2 +1,9 @@
-import{clsx as e}from"clsx";import{twMerge as t}from"tailwind-merge";function s(...r){return t(e(r))}export{s as cn};
+import { clsx } from "clsx";
+import { twMerge } from "tailwind-merge";
+function cn(...inputs) {
+  return twMerge(clsx(inputs));
+}
+export {
+  cn
+};
 //# sourceMappingURL=style.js.map

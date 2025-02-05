@@ -1,2 +1,7 @@
-import{WithContext as e}from"./with-context";import{WithContextContent as r}from"./with-context-content";export{e as WithContext,r as WithContextContent};
+import { WithContext } from "./with-context";
+import { WithContextContent } from "./with-context-content";
+export {
+  WithContext,
+  WithContextContent
+};
 //# sourceMappingURL=index.js.map

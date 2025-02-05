@@ -1,2 +1,16 @@
-import*as e from"react";const a=e.createContext({name:"",setName:()=>{}});function s({children:t}){const[n,o]=e.useState("test");return e.createElement(a,{value:{name:n,setName:o}},t)}const m=()=>{const{name:t,setName:n}=e.use(a);return[t,n]};export{s as WithContext,m as useName};
+import * as React from "react";
+const NameContext = React.createContext({ name: "", setName: () => {
+} });
+function WithContext({ children }) {
+  const [name, setName] = React.useState("test");
+  return /* @__PURE__ */ React.createElement(NameContext, { value: { name, setName } }, children);
+}
+const useName = () => {
+  const { name, setName } = React.use(NameContext);
+  return [name, setName];
+};
+export {
+  WithContext,
+  useName
+};
 //# sourceMappingURL=with-context.js.map

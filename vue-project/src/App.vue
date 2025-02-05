@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import "../../library/dist/styles/core.css";
 import HelloWorld from "./components/HelloWorld.vue";
 import {
   SimpleTest,

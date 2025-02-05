@@ -2,6 +2,6 @@
   "version": 3,
   "sources": ["../../src/components/vue.ts"],
   "sourcesContent": ["import { createRoot } from 'react-dom/client'\nimport { applyPureReactInVue, setVeauryOptions } from 'veaury'\n\nimport { SimpleTest as SimpleTestBase } from './simple-test'\nimport {\n  WithContext as WithContextBase,\n  WithContextContent as WithContextContentBase,\n} from './with-context'\n\nsetVeauryOptions({\n  react: {\n    createRoot,\n  },\n})\n\nexport const WithContext = applyPureReactInVue(WithContextBase)\nexport const WithContextContent = applyPureReactInVue(WithContextContentBase)\nexport const SimpleTest = applyPureReactInVue(SimpleTestBase)\n"],
-  "mappings": "AAAA,OAAS,cAAAA,MAAkB,mBAC3B,OAAS,uBAAAC,EAAqB,oBAAAC,MAAwB,SAEtD,OAAS,cAAcC,MAAsB,gBAC7C,OACE,eAAeC,EACf,sBAAsBC,MACjB,iBAEPH,EAAiB,CACf,MAAO,CACL,WAAAF,CACF,CACF,CAAC,EAEM,MAAMM,EAAcL,EAAoBG,CAAe,EACjDG,EAAqBN,EAAoBI,CAAsB,EAC/DG,EAAaP,EAAoBE,CAAc",
-  "names": ["createRoot", "applyPureReactInVue", "setVeauryOptions", "SimpleTestBase", "WithContextBase", "WithContextContentBase", "WithContext", "WithContextContent", "SimpleTest"]
+  "mappings": "AAAA,SAAS,kBAAkB;AAC3B,SAAS,qBAAqB,wBAAwB;AAEtD,SAAS,cAAc,sBAAsB;AAC7C;AAAA,EACE,eAAe;AAAA,EACf,sBAAsB;AAAA,OACjB;AAEP,iBAAiB;AAAA,EACf,OAAO;AAAA,IACL;AAAA,EACF;AACF,CAAC;AAEM,MAAM,cAAc,oBAAoB,eAAe;AACvD,MAAM,qBAAqB,oBAAoB,sBAAsB;AACrE,MAAM,aAAa,oBAAoB,cAAc;",
+  "names": []
 }

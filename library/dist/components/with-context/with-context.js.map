@@ -2,6 +2,6 @@
   "version": 3,
   "sources": ["../../../src/components/with-context/with-context.tsx"],
   "sourcesContent": ["import * as React from 'react'\n\ntype NameContextType = {\n  name: string\n  setName: (name: string) => void\n}\n\nconst NameContext = React.createContext<NameContextType>({ name: '', setName: () => {} })\n\nexport function WithContext({ children }: { children: React.ReactNode }) {\n  const [name, setName] = React.useState('test')\n\n  return <NameContext value={{ name, setName }}>{children}</NameContext>\n}\n\nexport const useName = () => {\n  const { name, setName } = React.use(NameContext)\n  return [name, setName] as const\n}\n"],
-  "mappings": "AAAA,UAAYA,MAAW,QAOvB,MAAMC,EAAcD,EAAM,cAA+B,CAAE,KAAM,GAAI,QAAS,IAAM,CAAC,CAAE,CAAC,EAEjF,SAASE,EAAY,CAAE,SAAAC,CAAS,EAAkC,CACvE,KAAM,CAACC,EAAMC,CAAO,EAAIL,EAAM,SAAS,MAAM,EAE7C,OAAOA,EAAA,cAACC,EAAA,CAAY,MAAO,CAAE,KAAAG,EAAM,QAAAC,CAAQ,GAAIF,CAAS,CAC1D,CAEO,MAAMG,EAAU,IAAM,CAC3B,KAAM,CAAE,KAAAF,EAAM,QAAAC,CAAQ,EAAIL,EAAM,IAAIC,CAAW,EAC/C,MAAO,CAACG,EAAMC,CAAO,CACvB",
-  "names": ["React", "NameContext", "WithContext", "children", "name", "setName", "useName"]
+  "mappings": "AAAA,YAAY,WAAW;AAOvB,MAAM,cAAc,MAAM,cAA+B,EAAE,MAAM,IAAI,SAAS,MAAM;AAAC,EAAE,CAAC;AAEjF,SAAS,YAAY,EAAE,SAAS,GAAkC;AACvE,QAAM,CAAC,MAAM,OAAO,IAAI,MAAM,SAAS,MAAM;AAE7C,SAAO,oCAAC,eAAY,OAAO,EAAE,MAAM,QAAQ,KAAI,QAAS;AAC1D;AAEO,MAAM,UAAU,MAAM;AAC3B,QAAM,EAAE,MAAM,QAAQ,IAAI,MAAM,IAAI,WAAW;AAC/C,SAAO,CAAC,MAAM,OAAO;AACvB;",
+  "names": []
 }

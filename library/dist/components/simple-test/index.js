@@ -1,2 +1,5 @@
-import{SimpleTest as o}from"./simple-test";export{o as SimpleTest};
+import { SimpleTest } from "./simple-test";
+export {
+  SimpleTest
+};
 //# sourceMappingURL=index.js.map
