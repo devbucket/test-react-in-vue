@@ -23,7 +23,7 @@
     "noUncheckedSideEffectImports": true,
     "baseUrl": ".",
     "paths": {
-      "@library/*": ["../library/dist/*"]
+      "@*": ["./src/*"]
     }
   },
   "include": ["src"]
