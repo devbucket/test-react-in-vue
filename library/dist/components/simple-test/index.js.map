@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../src/components/simple-test/index.ts"],
-  "sourcesContent": ["export { SimpleTest } from './simple-test'\n"],
-  "mappings": "AAAA,OAAS,cAAAA,MAAkB",
-  "names": ["SimpleTest"]
-}
