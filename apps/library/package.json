@@ -1,5 +1,5 @@
 {
-  "name": "library",
+  "name": "@csq/library",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
@@ -10,7 +10,9 @@
     "dist"
   ],
   "exports": {
-    "./tailwind-preset": "./tailwind-preset.ts"
+    "./components": "./dist/components/**/*.js",
+    "./utils": "./dist/utils/*.js",
+    "./tailwind.preset": "./tailwind.preset.ts"
   },
   "scripts": {
     "pre-build": "rm -rf dist",
