@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../src/components/with-context/index.ts"],
-  "sourcesContent": ["export { WithContext } from './with-context'\nexport { WithContextContent } from './with-context-content'\n"],
-  "mappings": "AAAA,SAAS,mBAAmB;AAC5B,SAAS,0BAA0B;",
-  "names": []
-}

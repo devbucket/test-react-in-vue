@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../src/components/simple-test/simple-test.tsx"],
-  "sourcesContent": ["import * as React from 'react'\n\nimport { cn } from '../../utils/style'\n\nexport function SimpleTest({ children, className, ...props }: React.ComponentProps<'div'>) {\n  return (\n    <div className={cn('p-2 bg-blue-200 rounded', className)} {...props}>\n      SimpleTest\n    </div>\n  )\n}\n"],
-  "mappings": "AAAA,YAAY,WAAW;AAEvB,SAAS,UAAU;AAEZ,SAAS,WAAW,EAAE,UAAU,WAAW,GAAG,MAAM,GAAgC;AACzF,SACE,oCAAC,SAAI,WAAW,GAAG,2BAA2B,SAAS,GAAI,GAAG,SAAO,YAErE;AAEJ;",
-  "names": []
-}
