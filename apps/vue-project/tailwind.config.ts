@@ -1,12 +1,11 @@
-import type { Config } from "tailwindcss";
-import path from "node:path";
-import preset from "@csq/library/tailwind.preset";
+import preset from '@csq/library/tailwind.preset'
+import type { Config } from 'tailwindcss'
 
 export default {
   content: [
-    "./src/**/*.{vue,js,ts,jsx,tsx}",
-    "./index.html",
-    // path.join(require.resolve("@csq/library"), "**/.js"),
+    './src/**/*.{vue,js,ts,jsx,tsx}',
+    './index.html',
+    '../../packages/library/src/**/*.{js,ts,jsx,tsx}',
   ],
   presets: [preset],
-} satisfies Config;
+} satisfies Config

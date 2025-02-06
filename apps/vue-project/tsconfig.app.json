@@ -9,15 +9,11 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
+
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"],
-      "@library/*": ["../library/dist/*"]
+      "@/*": ["./src/*"]
     }
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    "../library/dist/**/*.js"
-  ]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "../library/dist/**/*.js"]
 }
