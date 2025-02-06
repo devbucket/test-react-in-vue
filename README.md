@@ -7,14 +7,14 @@ It uses Turborepo for the mono-repo management.
 
 ## Starting the servers
 
-```bash
+```sh
 pnpm install
 pnpm run dev
 ```
 
 ## Building the application
 
-```bash
+```sh
 pnpm install
 pnpm run build
 ```
