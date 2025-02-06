@@ -3,33 +3,18 @@
 Testing writing a library in React and using it in Vue.
 No Web Components needed.
 
-## React App
+It uses Turborepo for the mono-repo management.
+
+## Starting the servers
 
 ```bash
-cd react-app
 pnpm install
-pnpm dev
+pnpm run dev
 ```
 
-## Vue App
+## Building the application
 
 ```bash
-cd vue-project
 pnpm install
-pnpm dev
-```
-
-## Library
-
-```bash
-cd library
-pnpm install
-pnpm dev
-```
-
-## Build
-
-```bash
-cd library
-pnpm build
+pnpm run build
 ```

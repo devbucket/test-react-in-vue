@@ -100,7 +100,11 @@ function App() {
                 </Button>
               </CardContent>
               <CardFooter className="flex justify-between">
-                <Button variant="ghost" className="text-indigo-500 hover:text-indigo-500">
+                <Button
+                  variant="ghost"
+                  className="text-indigo-500 hover:text-indigo-500"
+                  onClick={handleClose}
+                >
                   <ExternalLinkIcon className="size-4" />
                   <span>Open Journey Analysis</span>
                 </Button>
